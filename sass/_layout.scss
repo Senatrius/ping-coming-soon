@@ -1,0 +1,122 @@
+.container {
+  width: 85%;
+  max-width: 650px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin: 5.5rem auto 3rem auto;
+}
+
+.cta {
+  &__title {
+    text-align: center;
+    color: $neutral-gray;
+    font-size: calc(1rem + 1.75vw);
+    font-weight: 300;
+  }
+
+  .soon {
+    color: black;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-size: calc(.5rem + 1.5vw);
+    margin: 1.25rem 0 2.25rem 0;
+  }
+}
+
+.notify {
+  width: 90%;
+  margin: 0 auto;
+
+  .input-block {
+    display: flex;
+    flex-direction: column;
+
+    .error {
+      font-size: .65rem;
+      color: $secondary-red;
+      text-align: center;
+      margin: .5rem 0;
+      font-style: italic;
+      display: none;
+    }
+  }
+
+  .input__btn {
+    margin: .75rem 0 4rem 0;
+  }
+
+  &.error {
+    .input__field {
+      border: 2px solid $secondary-red;
+    }
+
+    .error {
+      display: block;
+    }
+
+    .input__btn {
+      margin: 1rem 0 2rem 0;
+    }
+  }
+}
+
+.social {
+  margin: 6rem auto 0 auto;
+}
+
+.legal {
+  font-size: .8rem;
+  text-align: center;
+  margin: 2.5rem 0;
+  color: $neutral-gray;
+}
+
+@media screen and (min-width: 769px) {
+  .cta {
+    &__title {
+      font-size: calc(2.25rem + 1.25vw);
+    }
+  
+    &__subtitle {
+      font-size: calc(.75rem + .75vw);
+    }
+  }
+
+  .notify {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .input-block {
+      position: relative;
+      flex: 1 0 65%;
+      margin-right: 1rem;
+    }
+
+    .input__btn {
+      flex: 0 0 35%;
+      margin-top: 0;
+      margin-bottom: 5rem;
+    }
+
+    .error {
+      margin: 0;
+      top: 3rem;
+      left: 2rem;
+      position: absolute;
+    }
+
+    &.error {
+      .input__btn {
+        margin-top: 0;
+        margin-bottom: 5rem;
+      }
+    }
+  }
+}

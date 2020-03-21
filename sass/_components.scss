@@ -1,0 +1,68 @@
+.logo {
+  display: block;
+  width: 20%;
+  min-width: 60px;
+  max-width: 100px;
+}
+
+.input {
+  width: 100%;
+  padding: .85rem 2.25rem;
+  border-radius: 100rem;
+  font-size: .9rem;
+
+  &::placeholder {
+    color: $secondary-blue
+  }
+
+  &__field {
+    border: 2px solid $secondary-blue
+  }
+
+  &__btn {
+    background-color: $primary-blue;
+    color: white;
+    font-weight: 600;
+
+    &:hover {
+      background: lighten($primary-blue, 10%)
+    }
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.social {
+  margin: 0 auto;
+  width: 45%;
+  min-width: 130px;
+  max-width: 150px;
+  justify-content: space-between;
+  display: flex;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid $secondary-blue;
+    color: $primary-blue;
+
+    &:hover {
+      color: white;
+      background-color: $primary-blue;
+      border: 1px solid $primary-blue;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .input {
+    padding: 1rem 2.25rem;
+  }
+}
