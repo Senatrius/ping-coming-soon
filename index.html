@@ -23,20 +23,23 @@
 
       <form class="notify">
         <div class="input-block">
-          <input type="text" class="input input__field" placeholder="Your email address...">
-          <p class="error">Please provide a valid email address</p>
+          <label for="email" class="req">Email:</label>
+          <input type="text" class="input input__field" id="email" placeholder="Your email address...">
+          <p class="error">Placeholder error message. If you see this, something's broken :(</p>
         </div>
-        <button class="input input__btn">Notify Me</button>
+        <button class="input input__btn" id="submit">Notify Me</button>
       </form>
 
       <img src="images/illustration-dashboard.png" alt="Dashboard illustration" class="image">
 
       <div class="social">
-        <a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="social__link"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="social__link"><i class="fab fa-instagram"> </i></a>
+        <a href="#" class="social__link" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social__link" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social__link" aria-label="instagram"><i class="fab fa-instagram"> </i></a>
       </div>
       <p class="legal">&copy;Copyright Ping. All rights reserved.</p>
     </div>
+
+    <script src="script.js"></script>
 	</body>
 </html>

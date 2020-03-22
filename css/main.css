@@ -32,6 +32,10 @@ body {
   max-width: 100px;
 }
 
+.req {
+  display: none;
+}
+
 .input {
   width: 100%;
   padding: .85rem 2.25rem;
@@ -229,7 +233,7 @@ body {
   }
   .notify .error {
     margin: 0;
-    top: 3rem;
+    top: 3.25rem;
     left: 2rem;
     position: absolute;
   }
